@@ -12,14 +12,14 @@ $light: #fff;
 body {
    background: $light;
    color: $dark;
-
+   overflow-x: hidden;
    &.dark-theme {
       background: $dark;
       color: $light;
    }
 }
 .container {
-   width: 100%;
+   min-width: 100%;
    min-height: 100vh;
    display: flex;
    flex-direction: column;
@@ -249,6 +249,148 @@ body {
    cursor: pointer;
 }
 
-.cv {
-   color: #551a8b;
+@media screen and (max-width: 812px) {
+   body {
+      overflow-x: hidden;
+   }
+   .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+   }
+   .navItem {
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+   }
+   .logo {
+      visibility: hidden;
+   }
+   .hero {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .navBar {
+      width: 100%;
+      height: 7vh;
+      display: flex;
+      color: red;
+      justify-content: center;
+      align-items: center;
+   }
+   #change-theme-btn {
+      position: relative;
+      background: white;
+      margin-right: 530px;
+      top: 3px;
+      width: 30px;
+      height: 30px;
+   }
+   .heroImg {
+      width: 350px;
+      height: 350px;
+   }
+   .heroText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 20vh;
+      font-size: 0.8em;
+      text-align: center;
+      position: relative;
+      right: 50px;
+      top: 50px;
+      padding: 40px;
+   }
+   .myWorks {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .myWorksImg {
+      width: 350px;
+      height: 350px;
+      position: relative;
+      bottom: 35%;
+      margin-top: 50px;
+   }
+   .myWorksText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 20vh;
+      font-size: 0.8em;
+      text-align: center;
+      position: relative;
+      right: 50px;
+      top: 200px;
+      padding: 40px;
+   }
+   .mySkills {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 350px;
+   }
+   .mySkillsImg {
+      width: 350px;
+      height: 350px;
+   }
+   .mySkillsText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 20vh;
+      font-size: 0.8em;
+      text-align: center;
+      position: relative;
+      right: 50px;
+      top: 50px;
+      padding: 40px;
+   }
+   .contact {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 330px;
+   }
+   .contactImg {
+      width: 350px;
+      height: 350px;
+      position: relative;
+      bottom: 35%;
+      margin-top: 50px;
+   }
+   .contactForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 20vh;
+      font-size: 0.8em;
+      text-align: center;
+      position: relative;
+      right: 50px;
+      top: 170px;
+      padding: 40px;
+   }
 }

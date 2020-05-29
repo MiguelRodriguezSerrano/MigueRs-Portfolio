@@ -4,20 +4,25 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="./style/styles.scss" />
+
       <script defer src="./js/main.js"></script>
       <title>Miguel RS</title>
    </head>
    <body>
       <div class="container">
          <header class="header">
-            <nav class="navBar">
+            <nav class="navBar r">
                <div class="logo">
-                  <img src="./assets/svg/logo4837593.svg" alt="Logo" />
+                  <img
+                     class="hidden md:block"
+                     src="./assets/svg/logo4837593.svg"
+                     alt="Logo"
+                  />
                </div>
-               <a href="#" class="navItem">about me.</a>
-               <a href="#" class="navItem">work.</a>
-               <a href="#" class="navItem">skills.</a>
-               <a href="#" class="navItem">contact.</a>
+               <a href="#" class="hidden md:block navItem">about me.</a>
+               <a href="#" class="hidden md:block navItem">work.</a>
+               <a href="#" class="hidden md:block navItem">skills.</a>
+               <a href="#" class="hidden md:block navItem">contact.</a>
                <button id="change-theme-btn"></button>
             </nav>
          </header>
