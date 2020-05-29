@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
 
 $dark: #000;
-$light: #fff;
+$light: #ebecf0;
 
 * {
    margin: 0;
@@ -54,7 +54,7 @@ body {
 }
 
 .navItem:hover {
-   background: #fff;
+   background: #ebecf0;
    color: #000;
 }
 
@@ -238,8 +238,8 @@ body {
 #change-theme-btn {
    width: 30px;
    height: 30px;
-   background: #fff;
-   border: 1px solid #fff;
+   background: #ebecf0;
+   border: none;
    color: #fff;
    padding: 5px;
    border-radius: 50%;
