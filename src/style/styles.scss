@@ -232,6 +232,15 @@ body {
    position: relative;
    right: 100px;
    top: 30px;
+   animation: appear 2s;
+}
+@keyframes appear {
+   0% {
+      top: -30px;
+   }
+   100% {
+      top: 30px;
+   }
 }
 ::selection {
    color: white;
